@@ -122,5 +122,4 @@ function GalleryImage() {
 	var description;
 	var date;
 	var img;
-  //hi//
 }
