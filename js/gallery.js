@@ -43,15 +43,15 @@ function swapPhoto() {
     mCurrentIndex = mImages.length-1;
   };
 
-  document.getElementsById('photo').src = mImages[mCurrentIndex].img;
+  document.getElementById('photo').src = mImages[mCurrentIndex].img;
 
-var location = document.getElementsByClassName('locaion')[0];
+var location = document.getElementByClassName('locaion')[0];
 location.innerHTML =  "Location: " + mImages[mCurrentIndex].location;
 
-var description = document.getElementsByClassName('description')[0];
+var description = document.getElementByClassName('description')[0];
 description.innerHTML =  "Description: " + mImages[mCurrentIndex].description;
 
-var date= document.getElementsByClassName('date')[0];
+var date= document.getElementByClassName('date')[0];
 date.innerHTML =  "Date: " + mImages[mCurrentIndex].date;
 
 mLastFrameTime = 0;
@@ -106,7 +106,7 @@ window.addEventListener('load', function() {
 
 }, false);
 
-function iterationJSON() {
+function iterateJSON() {
   for(x = 0; x <mJson.images.length; x++)
   {
     mImages[x] = new GalleryImage();
