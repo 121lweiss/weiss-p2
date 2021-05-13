@@ -123,3 +123,9 @@ function GalleryImage() {
 	var date;
 	var img;
 }
+
+$( "prevPhoto" ).click(function() {
+  $( "prevPhoto" ).animate({
+    rotate 90,
+  });
+});
