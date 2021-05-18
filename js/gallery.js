@@ -129,4 +129,3 @@ $( "prevPhoto" ).click(function() {
     rotate 90,
   });
 });
-//hi

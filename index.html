@@ -13,7 +13,7 @@
     <div id="slideShow">
       <div class="photoHolder">
         <img class="thumbnail" id="photo" src="http://placehold.it/518x389?text=Welcome+to+my+Gallery" alt="Gallery Image"/>
-				<img class="moreIndicator rot90" src="img/more.png" alt="More Content"/>
+				<img class="moreIndicator rot90" src="img/more.png" alt="More Content" onclick="function()"/>
 			</div>
 
       <div id="nav">
@@ -28,5 +28,15 @@
 
     </div>
   </div>
+	<script>
+	if ($(".moreIndicator").hasClass("rot90")) {
+		$(".moreIndicator").addClass("rot270");
+		$(".moreIndicator")..removeClass("rot90");
+	};
+	else {
+		$(".moreIndicator").addClass("rot90");
+		$(".moreIndicator")..removeClass("rot270");
+	}
+	</script>
 </body>
 </html>
