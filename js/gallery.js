@@ -129,3 +129,9 @@ $( "prevPhoto" ).click(function() {
     rotate 90,
   });
 });
+
+$("#nextPhoto").position({
+  my:"center",
+  at:"center",
+  of:"#nav"
+});
