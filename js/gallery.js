@@ -135,3 +135,9 @@ $("#nextPhoto").position({
   at:"center",
   of:"#nav"
 });
+
+$("#prevPhoto").position({
+  my:"center",
+  at:"center",
+  of:"#nav"
+});
